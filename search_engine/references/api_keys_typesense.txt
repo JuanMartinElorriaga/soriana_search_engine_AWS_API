@@ -1,0 +1,10 @@
+=== Typesense Cloud: pkzwyr9d2imu0xbop ===
+
+Admin API Key:
+7G7b6NZBlJpC9RIcNMRJyxudS0FvhlYq
+
+Search Only API Key:
+7qQkBLNT62OarNmKPBuYlcaf1iNjTZh8
+
+Nodes:
+- pkzwyr9d2imu0xbop-1.a1.typesense.net [https:443]

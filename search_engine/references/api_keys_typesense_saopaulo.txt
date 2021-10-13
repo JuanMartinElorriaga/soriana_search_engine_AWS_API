@@ -1,0 +1,10 @@
+=== Typesense Cloud: axb2vlh0spjudi31p ===
+
+Admin API Key:
+JpzBUlniOxrDTZrbnu4C3JYwPVM17XTq
+
+Search Only API Key:
+sMNt7z17EIJrJJx0NOet7QidOLJaa22K
+
+Nodes:
+- axb2vlh0spjudi31p-1.a1.typesense.net [https:443]
