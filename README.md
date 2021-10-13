@@ -4,3 +4,5 @@
 
 El proyecto utiliza los servicios de Typense, API Gateway, Lambda y S3 para permitir un endpoint accesible sobre el cual testear la API.
 Se utiliza por detrás un cluster de los servidores de Typesense como infra del proceso.
+
+![Workflow](https://github.com/JuanMartinElorriaga/soriana_search_engine_AWS_API/blob/master/search_engine/references/serverless_soriana)
