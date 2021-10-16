@@ -14,6 +14,9 @@ La API debe poder ser consumida tanto a nivel URL como UI (Swagger).
 - Typesense Account & servidor corriendo (de preferencia, Sao Paulo)
 - FastAPI; Uvicorn; Mangum (librerías de Python)
 
+### Typesense
+Typesense es un motor de búsqueda open source que tolera los errores tipográficos y está optimizado para realizar búsquedas instantáneas en menos de `50 ms`, al tiempo que ofrece una experiencia intuitiva para los desarrolladores. Se ofrece como una alternativa frente a ElasticSearch, con mayores funcionalidades en general.
+
 ### FastAPI
 - FastAPI es un framework de Python para construcción de API's, preparado para deployar directamente en producción.
 - FastAPI utiliza de fondo Uvicorn, que es el servidor que por detrás corre la infra necesaria.
@@ -29,7 +32,7 @@ API Gateway representa el enrutador de peticiones por parte del usuario final, e
 Lambda es un servicio serverless que permite correr código en diferentes runtimes (en este caso, Python). En este caso, sirve para ejecutar el código que interpreta, parsea y retorna el resultado de la query por parte del usuario sobre el servicio de Typesense.
 
 ### S3
-S3 es un tipo de storage que permite almacenar diversos recursos. En este caso, se utiliza para almacenar la función Lambda en un archivo .zip, para promover escalabilidad y mayor facilidad en la actualización del código.
+S3 es un tipo de storage que permite almacenar diversos recursos. En este caso, se utiliza para almacenar la función Lambda en un archivo `.zip`, para promover escalabilidad y mayor facilidad en la actualización del código.
 
 ## Procedimiento
 - Configurar cuenta en Typesense (alternativa open-source y typo-sensitive a ElasticSearch) y levantar un servidor. Es notable la diferencia de latencias cuando se usa el servidor de Sao Paulo en lugar de Estados Unidos. Tener en cuenta este detalle a la hora de deployar en producción.
@@ -43,7 +46,7 @@ S3 es un tipo de storage que permite almacenar diversos recursos. En este caso, 
 - Actualizar la función creada para que se dirija al S3 para buscar el código. Se puede realizar mediante CLI (o desde la Management Console): `aws lambda update-function-code --function-name medium-demo --s3-bucket $bucket_name --s3-key lambda.zip`.
 - Crear la REST API con API Gateway _(la versión pública)_. Importante: la región debe ser la misma que la función Lambda para minimizar latencias.
 - Chequear la opción de API Gateway proxy, para que el contenido de la HTTP request se transmita al parámetro `event` de la función Lambda. 
-- En el caso de querer habilitar cualquier tipo de método, crear un Method con la opción `ANY` (incluye `GET, POST, PATCH, ...`), y un child Resource a partir de dicho método con el proxy integration, para routear todas las request por debajo del root `\` Dejar el resto de parámetros en default.
+- En el caso de querer habilitar cualquier tipo de método, crear un Method con la opción `ANY` (incluye `GET, POST, PATCH, ...`), y un child Resource a partir de dicho método con el proxy integration, para routear todas las request por debajo del root `\`. Dejar el resto de parámetros en default.
 - Deployar API
 - Testear el endpoint
 
