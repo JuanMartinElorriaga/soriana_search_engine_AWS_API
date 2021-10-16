@@ -56,8 +56,7 @@ S3 es un tipo de storage que permite almacenar diversos recursos. En este caso, 
 - `{proxy+}` se usa para evitar escribir templates de mapeo entre las diferentes funciones Lambda. Acá, solo se una una única función para todos los endpoints. 
 - Las request a la API Gateway pueden ser miles y procesadas en paralelo, garantizando escalabilidad.
 - Para garantizar la seguridad de la API, es necesario integrar Cognito al sistema.
-- Este sistema también puede ser adaptable al _Serverless Framework_ y a _AWS SAM_.
-
+- Este sistema también puede ser adaptable al [Serverless Framework](https://github.com/jordaneremieff/serverless-mangum-examples/tree/main/fastapi-example)y a [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html).
 ## Referencias
 https://fastapi.tiangolo.com/
 
