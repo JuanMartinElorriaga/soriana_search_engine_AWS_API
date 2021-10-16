@@ -52,6 +52,7 @@ S3 es un tipo de storage que permite almacenar diversos recursos. En este caso, 
 
 ---
 ### Notas 
+- Dar de baja el server de Typesense antes de que se termine el free tier :)
 - Para cambiar la url del endpoint, debe usarse un Custom Domain Name.
 - `{proxy+}` se usa para evitar escribir templates de mapeo entre las diferentes funciones Lambda. Acá, solo se una una única función para todos los endpoints. 
 - Las request a la API Gateway pueden ser miles y procesadas en paralelo, garantizando escalabilidad.
