@@ -59,13 +59,15 @@ S3 es un tipo de storage que permite almacenar diversos recursos. En este caso, 
 - Para garantizar la seguridad de la API, es necesario integrar Cognito al sistema.
 - Este sistema también puede ser adaptable al [Serverless Framework](https://github.com/jordaneremieff/serverless-mangum-examples/tree/main/fastapi-example)y a [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html).
 ## Referencias
-https://fastapi.tiangolo.com/
+[FastAPI Home](https://fastapi.tiangolo.com/)
 
-https://github.com/tiangolo/fastapi
+[docs de FastAPI](https://github.com/tiangolo/fastapi)
 
-https://www.youtube.com/watch?v=6fE31084Uks
+[Video explicativo, igual a la doc. original](https://www.youtube.com/watch?v=6fE31084Uks)
 
-https://towardsdatascience.com/fastapi-aws-robust-api-part-1-f67ae47390f9
+[doc. original del sistema](https://towardsdatascience.com/fastapi-aws-robust-api-part-1-f67ae47390f9)
+
+[Versión automatizada con Travis](https://iwpnd.pw/articles/2020-01/deploy-fastapi-to-aws-lambda)
 
 
 ## Resultado final
