@@ -28,3 +28,10 @@ https://github.com/tiangolo/fastapi
 https://www.youtube.com/watch?v=6fE31084Uks
 
 https://towardsdatascience.com/fastapi-aws-robust-api-part-1-f67ae47390f9
+
+
+## Resultado final
+https://vb0wy8ppki.execute-api.us-east-2.amazonaws.com/dev/
+
+Para ver en forma de UI (Swagger):
+https://vb0wy8ppki.execute-api.us-east-2.amazonaws.com/dev/docs#/default/get_query__get
