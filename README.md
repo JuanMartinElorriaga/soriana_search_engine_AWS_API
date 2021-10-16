@@ -8,18 +8,20 @@ Se utiliza por detrás un cluster de los servidores de Typesense como infra del 
 
 ![Workflow](https://github.com/JuanMartinElorriaga/soriana_search_engine_AWS_API/blob/master/search_engine/references/serverless_soriana)
 
-#### FastAPI
+### FastAPI
 FastAPI
 
-#### API Gateway
+### API Gateway
 
-#### Lambda function
+### Lambda function
 
-#### S3
+### S3
 
 
 
 ## Referencias
 https://fastapi.tiangolo.com/
+
 https://github.com/tiangolo/fastapi
+
 https://www.youtube.com/watch?v=6fE31084Uks
