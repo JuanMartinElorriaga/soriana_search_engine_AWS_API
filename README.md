@@ -32,6 +32,8 @@ Lambda es un servicio serverless que permite correr código en diferentes runtim
 S3 es un tipo de storage que permite almacenar diversos recursos. En este caso, se utiliza para almacenar la función Lambda en un archivo .zip, para promover escalabilidad y mayor facilidad en la actualización del código.
 
 ## Procedimiento
+- Configurar cuenta en Typesense (alternativa open-source y typo-sensitive a ElasticSearch) y levantar un servidor. Es notable la diferencia de latencias cuando se usa el servidor de Sao Paulo en lugar de Estados Unidos. Tener en cuenta este detalle a la hora de deployar en producción.
+- Verter contenido de testing sobre alguna base de Typesense. Esto puede hacerse tanto en forma manual mediante la interfaz o en forma de bulk mediante la API.
 - Instalar las librerías FastAPI y Uvicorn en el entorno local.
 - Testear la API en un entorno local: `uvicorn main:app --reload`. Si se conserva el puerto por default, revisar en: `http://localhost:8000/docs`.
 - Crear un nuevo environment _(recomendación: usar virtualenv, ya que crea una carpeta de librerías dependientes que luego puede conservarse dentro del .zip de la función Lambda)_
