@@ -52,7 +52,7 @@ S3 es un tipo de storage que permite almacenar diversos recursos. En este caso, 
 
 ---
 ### Notas 
-- Para cambiar la url del endpoint, debe usar un Custom Domain Name.
+- Para cambiar la url del endpoint, debe usarse un Custom Domain Name.
 - `{proxy+}` se usa para evitar escribir templates de mapeo entre las diferentes funciones Lambda. Acá, solo se una una única función para todos los endpoints. 
 - Las request a la API Gateway pueden ser miles y procesadas en paralelo, garantizando escalabilidad.
 - Para garantizar la seguridad de la API, es necesario integrar Cognito al sistema.
