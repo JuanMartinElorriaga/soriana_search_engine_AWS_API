@@ -9,7 +9,8 @@ Se utiliza por detrás un cluster de los servidores de Typesense como infra del 
 ![Workflow](https://github.com/JuanMartinElorriaga/soriana_search_engine_AWS_API/blob/master/search_engine/references/serverless_soriana)
 
 ### FastAPI
-FastAPI
+FastAPI es un framework de Python para construcción de API's.
+FastAPI utiliza de fondo Uvicorn, que es el servidor que por detrás corre la infra necesaria.
 
 ### API Gateway
 
@@ -25,3 +26,5 @@ https://fastapi.tiangolo.com/
 https://github.com/tiangolo/fastapi
 
 https://www.youtube.com/watch?v=6fE31084Uks
+
+https://towardsdatascience.com/fastapi-aws-robust-api-part-1-f67ae47390f9
