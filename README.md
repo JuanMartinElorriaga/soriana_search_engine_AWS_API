@@ -53,26 +53,31 @@ S3 es un tipo de storage que permite almacenar diversos recursos. En este caso, 
 ---
 ### Notas 
 - Dar de baja el server de Typesense antes de que se termine el free tier :)
+
 - Para cambiar la url del endpoint, debe usarse un Custom Domain Name.
+
 - `{proxy+}` se usa para evitar escribir templates de mapeo entre las diferentes funciones Lambda. Acá, solo se una una única función para todos los endpoints. 
+
 - Las request a la API Gateway pueden ser miles y procesadas en paralelo, garantizando escalabilidad.
+
 - Para garantizar la seguridad de la API, es necesario integrar Cognito al sistema.
+
 - Este sistema también puede ser adaptable al [Serverless Framework](https://github.com/jordaneremieff/serverless-mangum-examples/tree/main/fastapi-example)y a [AWS SAM](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html).
+
 ## Referencias
-[FastAPI Home](https://fastapi.tiangolo.com/)
+- [FastAPI Home](https://fastapi.tiangolo.com/)
 
-[docs de FastAPI](https://github.com/tiangolo/fastapi)
+- [docs de FastAPI](https://github.com/tiangolo/fastapi)
 
-[Video explicativo, igual a la doc. original](https://www.youtube.com/watch?v=6fE31084Uks)
+- [Video explicativo, igual a la doc. original](https://www.youtube.com/watch?v=6fE31084Uks)
 
-[doc. original del sistema](https://towardsdatascience.com/fastapi-aws-robust-api-part-1-f67ae47390f9)
+- [doc. original del sistema](https://towardsdatascience.com/fastapi-aws-robust-api-part-1-f67ae47390f9)
 
-[Versión automatizada con Travis](https://iwpnd.pw/articles/2020-01/deploy-fastapi-to-aws-lambda)
+- [Versión automatizada con Travis](https://iwpnd.pw/articles/2020-01/deploy-fastapi-to-aws-lambda)
 
 
 ## Resultado final
-https://vb0wy8ppki.execute-api.us-east-2.amazonaws.com/dev/
+- https://vb0wy8ppki.execute-api.us-east-2.amazonaws.com/dev/
 
 Para ver en forma de UI (Swagger):
-
-https://vb0wy8ppki.execute-api.us-east-2.amazonaws.com/dev/docs#/default/get_query__get
+- https://vb0wy8ppki.execute-api.us-east-2.amazonaws.com/dev/docs#/default/get_query__get
